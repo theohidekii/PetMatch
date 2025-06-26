@@ -1,194 +1,163 @@
-# 🐕 TinderPet - App de Relacionamento para Pets
+# 🐕 PupFind – Pet Matchmaking App
 
-O TinderPet é um aplicativo de relacionamento inspirado no Tinder, mas focado em conectar cachorros e seus tutores para criar amizades e encontros divertidos.
+**PupFind** is a matchmaking app inspired by Tinder, focused on connecting dogs and their owners for socializing, responsible breeding, and fun meetups.
 
-## ✨ Funcionalidades
+## ✨ Features
 
-### 🔐 Autenticação
-- Cadastro e login de usuários
-- Autenticação via e-mail
-- Recuperação de senha
-- Login social (Google)
+### 🔐 Authentication
+- User sign-up and login
+- Email authentication
+- Password recovery
+- Social login (Google)
 
-### 🐾 Perfil do Pet
-- Nome, idade, raça e sexo
-- Múltiplas fotos (até 6)
-- Descrição personalizada
-- Informações do tutor
+### 🐾 Pet Profile
+- Name, age, breed, and gender
+- Multiple photos (up to 6)
+- Custom description
+- Owner information
 
-### 📍 Geolocalização
-- Busca de pets na região
-- Filtro por distância
-- Localização em tempo real
+### 📍 Geolocation
+- Search pets in your area
+- Distance filtering
+- Real-time location
 
-### 💕 Sistema de Swipe
-- Interface similar ao Tinder
-- Swipe para direita (curtir)
-- Swipe para esquerda (rejeitar)
-- Animações suaves e responsivas
+### 💕 Swipe System
+- Tinder-style interface
+- Swipe right (like)
+- Swipe left (pass)
+- Smooth and responsive animations
 
-### 💬 Chat e Matches
-- Notificação de matches
-- Chat em tempo real
-- Lista de conversas
-- Mensagens de texto
+### 💬 Chat & Matches
+- Match notifications
+- Real-time chat
+- Conversations list
+- Text messaging
 
-### 🔍 Filtros de Busca
-- Por sexo do pet
-- Por raça
-- Por faixa etária
-- Por distância
+### 🔍 Search Filters
+- By pet gender
+- By breed
+- By age range
+- By distance
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
 ### Frontend
-- **Next.js 14** - Framework React com App Router
-- **TypeScript** - Tipagem estática
-- **Tailwind CSS** - Framework de estilização
-- **Framer Motion** - Animações
-- **React Hook Form** - Gerenciamento de formulários
-- **Lucide React** - Ícones
-- **React Hot Toast** - Notificações
+- **Next.js 14** - React Framework with App Router
+- **TypeScript** - Static typing
+- **Tailwind CSS** - Styling framework
+- **Framer Motion** - Animations
+- **React Hook Form** - Form management
+- **Lucide React** - Icons
+- **React Hot Toast** - Notifications
 
-### Backend (Planejado)
-- **Node.js** - Runtime JavaScript
-- **Express.js** - Framework web
-- **PostgreSQL** - Banco de dados
-- **Socket.io** - Comunicação em tempo real
-- **JWT** - Autenticação
-- **Multer** - Upload de arquivos
+### Backend (Planned)
+- **Node.js** - JavaScript runtime
+- **Express.js** - Web framework
+- **PostgreSQL** - Database
+- **Socket.io** - Real-time communication
+- **JWT** - Authentication
+- **Multer** - File upload
 
 ## 📱 Design System
 
-### Cores
-- **Primary**: Laranja quente (#ed7a1a)
-- **Secondary**: Azul (#0ea5e9)
-- **Success**: Verde (#10b981)
-- **Error**: Vermelho (#ef4444)
-- **Tinder Colors**: 
-  - Verde (#6bcf7f)
-  - Vermelho (#ff4458)
-  - Amarelo (#ffd93d)
+### Colors
+- **Primary**: Warm orange (#ed7a1a)
+- **Secondary**: Blue (#0ea5e9)
+- **Success**: Green (#10b981)
+- **Error**: Red (#ef4444)
+- **Tinder Colors**:
+  - Green (#6bcf7f)
+  - Red (#ff4458)
+  - Yellow (#ffd93d)
 
-### Tipografia
-- **Fonte**: Inter (Google Fonts)
-- **Pesos**: 300, 400, 500, 600, 700
+### Typography
+- **Font**: Inter (Google Fonts)
+- **Weights**: 300, 400, 500, 600, 700
 
-### Componentes
-- Cards com bordas arredondadas
-- Botões com hover effects
-- Animações suaves
-- Design responsivo
+### Components
+- Rounded cards
+- Hover-effect buttons
+- Smooth animations
+- Fully responsive design
 
-## 🛠️ Instalação e Configuração
-
-### Pré-requisitos
-- Node.js 18+ 
-- npm ou yarn
-- Git
-
-### 1. Clone o repositório
-```bash
-git clone https://github.com/seu-usuario/tinderpet.git
-cd tinderpet
-```
-
-### 2. Instale as dependências do Frontend
-```bash
-cd frontend
-npm install
-```
-
-### 3. Configure as variáveis de ambiente
-Crie um arquivo `.env.local` na pasta `frontend`:
-```env
-NEXT_PUBLIC_API_URL=http://localhost:3001
-NEXT_PUBLIC_GOOGLE_CLIENT_ID=seu-google-client-id
-```
-
-### 4. Execute o projeto
-```bash
-npm run dev
-```
-
-O projeto estará disponível em `http://localhost:3000`
-
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
-TinderPet/
+PupFind/
 ├── frontend/
-│   ├── app/                    # App Router (Next.js 14)
-│   │   ├── globals.css        # Estilos globais
-│   │   ├── layout.tsx         # Layout principal
-│   │   ├── page.tsx           # Página inicial
-│   │   ├── login/             # Página de login
-│   │   ├── register/          # Página de registro
-│   │   ├── swipe/             # Página de swipe
-│   │   └── chat/              # Página de chat
-│   ├── components/            # Componentes reutilizáveis
-│   │   └── SwipeCard.tsx      # Card de swipe
-│   ├── types/                 # Tipos TypeScript
-│   │   └── index.ts           # Definições de tipos
-│   ├── package.json           # Dependências
-│   ├── tailwind.config.js     # Configuração Tailwind
-│   └── tsconfig.json          # Configuração TypeScript
-├── backend/                   # Backend (a ser implementado)
-└── README.md                  # Documentação
+│ ├── app/ # App Router (Next.js 14)
+│ │ ├── globals.css # Global styles
+│ │ ├── layout.tsx # Main layout
+│ │ ├── page.tsx # Landing page
+│ │ ├── login/ # Login page
+│ │ ├── register/ # Registration page
+│ │ ├── swipe/ # Swipe interface
+│ │ └── chat/ # Chat page
+│ ├── components/ # Reusable components
+│ │ └── SwipeCard.tsx # Swipe card component
+│ ├── types/ # TypeScript types
+│ │ └── index.ts # Type definitions
+│ ├── package.json # Dependencies
+│ ├── tailwind.config.js # Tailwind config
+│ └── tsconfig.json # TypeScript config
+├── backend/ # Backend (to be implemented)
+└── README.md # Documentation
 ```
 
-## 🎨 Páginas e Componentes
 
-### Página Inicial (`/`)
-- Landing page atrativa
-- Seção de features
-- Call-to-action para cadastro
-- Design responsivo
+## 🎨 Pages and Components
+
+### Home (`/`)
+- Engaging landing page
+- Features section
+- Sign-up call to action
+- Fully responsive
 
 ### Login (`/login`)
-- Formulário de autenticação
-- Validação de campos
-- Login social
-- Recuperação de senha
+- Authentication form
+- Field validation
+- Social login support
+- Password reset
 
-### Registro (`/register`)
-- Formulário em 3 etapas:
-  1. Informações pessoais
-  2. Informações do pet
-  3. Upload de fotos
-- Validação completa
-- Preview de imagens
+### Register (`/register`)
+- 3-step form:
+  1. User info
+  2. Pet info
+  3. Photo upload
+- Full validation
+- Image preview
 
 ### Swipe (`/swipe`)
-- Interface principal do app
-- Cards com drag & drop
-- Navegação de fotos
-- Botões de ação
-- Animações de swipe
+- Core app interface
+- Draggable cards
+- Photo navigation
+- Action buttons
+- Swipe animations
 
 ### Chat (`/chat`)
-- Lista de matches
-- Interface de conversa
-- Mensagens em tempo real
-- Indicador de digitação
+- Match list
+- Messaging interface
+- Real-time messaging
+- Typing indicator
 
-## 🔧 Scripts Disponíveis
+## 🔧 Available Scripts
 
 ```bash
-# Desenvolvimento
-npm run dev          # Inicia servidor de desenvolvimento
+# Development
+npm run dev          # Start development server
 
 # Build
-npm run build        # Gera build de produção
-npm run start        # Inicia servidor de produção
+npm run build        # Generate production build
+npm run start        # Start production server
 
 # Linting
-npm run lint         # Executa ESLint
+npm run lint         # Run ESLint
+
 ```
 
-## 📱 Responsividade
+## 📱 Responsiveness
 
-O aplicativo é totalmente responsivo e otimizado para:
+The app is fully responsive and optimized for:
 - **Mobile**: 320px - 768px
 - **Tablet**: 768px - 1024px
 - **Desktop**: 1024px+
@@ -196,46 +165,34 @@ O aplicativo é totalmente responsivo e otimizado para:
 ## 🎯 Próximos Passos
 
 ### Backend
-- [ ] API REST com Express.js
-- [ ] Autenticação JWT
-- [ ] Upload de imagens
-- [ ] Geolocalização
-- [ ] Sistema de matches
-- [ ] Chat em tempo real
+- [ ] REST API with Express.js
+- [ ] JWT authentication
+- [ ] Image upload
+- [ ] Geolocation support
+- [ ] Matchmaking system
+- [ ] Real-time chat
 
 ### Frontend
-- [ ] Integração com API
+- [ ] API integration
 - [ ] PWA (Progressive Web App)
 - [ ] Push notifications
-- [ ] Filtros avançados
-- [ ] Perfil do usuário
-- [ ] Configurações
+- [ ] Advanced filters
+- [ ] User profile settings
+- [ ] App settings
 
 ### Funcionalidades Avançadas
 - [ ] Video calls
-- [ ] Stories de pets
-- [ ] Eventos e encontros
-- [ ] Sistema de reputação
-- [ ] Verificação de perfis
-- [ ] Moderação de conteúdo
+- [ ] Pet stories
+- [ ] Events and meetups
+- [ ] Reputation system
+- [ ] Profile verification
+- [ ] Content moderation
 
-## 🤝 Contribuição
+## 👥 Author
 
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+- Theo Hideki - [GitHub](https://github.com/theohidekii)
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 👥 Autores
-
-- **Seu Nome** - *Desenvolvimento inicial* - [SeuGitHub](https://github.com/seu-usuario)
-
-## 🙏 Agradecimentos
+## 🙏 Acknowledgments
 
 - Inspirado no design do Tinder
 - Ícones por [Lucide](https://lucide.dev/)
@@ -243,4 +200,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-**TinderPet** - Conectando pets e criando amizades duradouras! 🐕❤️ 
+**PetMatch** - Conectando pets e criando amizades duradouras! 🐕❤️ 
